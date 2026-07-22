@@ -1,0 +1,33 @@
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+/* 各ページの <style> で --c-* を上書きすると、そのページ全体の色が変わります */
+:root{
+  --c-deep:#3E86B5; --c-mid:#7FC0DE; --c-light:#BFDFF0;
+  --c-pale:#EAF5FB; --c-dark:#2A5F80; --c-shadow:62,134,181;
+  --text:#1a1a1a; --text-sub:#666; --white:#fff; --radius:16px;
+}
+body{font-family:"Noto Sans JP",sans-serif;color:var(--text);background:var(--white);line-height:1.8;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 20px;
+  -webkit-font-smoothing:antialiased}
+.box{max-width:560px;width:100%;text-align:center;position:relative}
+.g-dot{position:absolute;border-radius:50%;background:var(--c-light);
+  animation:twinkle var(--d,2.4s) ease-in-out infinite var(--dl,0s)}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:1;transform:scale(1.5)}}
+.eyebrow{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.14em;
+  background:var(--c-pale);color:var(--c-dark);padding:6px 15px;border-radius:999px}
+h1{font-family:"Noto Serif JP",serif;font-size:27px;font-weight:600;line-height:1.55;margin:22px 0 8px}
+.lead{font-size:14px;color:var(--c-deep);font-weight:500;margin-bottom:22px}
+.panel{background:var(--c-pale);border-radius:var(--radius);padding:26px 24px;text-align:left;font-size:14.5px;color:#333}
+.panel p + p{margin-top:14px}
+.status{margin-top:30px;font-family:"Noto Serif JP",serif;font-size:19px;font-weight:500;color:var(--c-dark);letter-spacing:.08em}
+.status small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:13px;font-weight:400;color:var(--text-sub);letter-spacing:0;margin-top:8px}
+.btn{display:block;max-width:320px;margin:14px auto 0;text-align:center;text-decoration:none;
+  font-weight:500;letter-spacing:.04em;font-size:15px;padding:15px 20px;border-radius:999px;
+  background:linear-gradient(135deg,var(--c-deep),var(--c-mid));color:var(--white);
+  box-shadow:0 4px 14px rgba(var(--c-shadow),.28);transition:filter .2s,box-shadow .2s}
+.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px rgba(var(--c-shadow),.38)}
+.btn.ghost{background:none;color:var(--c-dark);border:1.5px solid var(--c-light);box-shadow:none}
+.btn.ghost:hover{background:var(--c-pale);filter:none}
+.actions{margin-top:32px;padding-top:28px;border-top:1px solid var(--c-light)}
+.actions p{font-size:13px;color:var(--text-sub);margin-bottom:6px}
+footer{margin-top:36px;font-size:11px;color:var(--text-sub);letter-spacing:.06em}
+@media(max-width:480px){h1{font-size:23px}}
