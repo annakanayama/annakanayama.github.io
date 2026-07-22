@@ -20,7 +20,7 @@
 }
 body{font-family:"Noto Sans JP",sans-serif;color:var(--text);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-.wrap{max-width:680px;margin:0 auto;padding:0 20px 80px}
+.wrap{max-width:780px;margin:0 auto;padding:0 20px 80px}
 .serif{font-family:"Noto Serif JP",serif}
 
 /* ---------- hero ---------- */
@@ -45,13 +45,18 @@ section{padding-top:56px}
 .profile p + p{margin-top:12px}
 
 /* ---------- service cards ---------- */
-.cards{display:grid;gap:18px}
+/* 2列×2行。スマホでは自動で1列になります */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
 /* サービスごとのテーマカラー（カード内だけ色が切り替わります） */
 .card.t-pink{--c-deep:#D4537E;--c-mid:#ED93B1;--c-light:#F4C0D1;--c-pale:#FBEAF0;--c-dark:#993556;--c-shadow:212,83,126}
 .card.t-purple{--c-deep:#7B62B8;--c-mid:#AE97DC;--c-light:#D6C9EE;--c-pale:#F2EDFB;--c-dark:#574183;--c-shadow:123,98,184}
 .card.t-red{--c-deep:#D4595A;--c-mid:#EE9490;--c-light:#F6C6C2;--c-pale:#FCEDEA;--c-dark:#99383A;--c-shadow:212,89,90}
 .card.t-yellow{--c-deep:#B07E1C;--c-mid:#E2BA5C;--c-light:#F0DCA3;--c-pale:#FCF5E4;--c-dark:#7A5610;--c-shadow:176,126,28}
-.card{border:1px solid var(--c-light);border-radius:var(--radius);padding:26px 22px 24px;background:var(--white);transition:box-shadow .25s,transform .25s}
+.card{border:1px solid var(--c-light);border-radius:var(--radius);padding:26px 22px 24px;background:var(--white);
+  transition:box-shadow .25s,transform .25s;display:flex;flex-direction:column}
+/* ボタンをカード下端でそろえる（説明文の長さが違っても高さが揃います） */
+.card .btn{margin-top:auto}
+.card > :nth-last-child(2){margin-bottom:20px}
 .card:hover{box-shadow:0 8px 24px rgba(var(--c-shadow),.13);transform:translateY(-2px)}
 .card-tag{display:inline-block;font-size:10px;letter-spacing:.1em;font-weight:500;background:var(--c-pale);color:var(--c-dark);padding:5px 12px;border-radius:999px}
 .card h3{font-family:"Noto Serif JP",serif;font-size:19px;font-weight:600;margin:14px 0 4px;line-height:1.5}
@@ -78,6 +83,9 @@ section{padding-top:56px}
 .contact .btn{max-width:320px;margin:20px auto 0}
 footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:48px;letter-spacing:.06em}
 
+@media(max-width:620px){
+  .cards{grid-template-columns:1fr}
+}
 @media(max-width:480px){
   .hero h1{font-size:25px}
   .sec-title{font-size:19px}
@@ -152,7 +160,6 @@ footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:48px;le
   <!-- ============ プロフィール ============ -->
   <section id="profile">
     <span class="sec-label">✦ PROFILE</span>
-    <h2 class="sec-title">担当するのは、こんな人です</h2>
     <div class="profile">
       <div class="name">アンナ</div>
       <div class="role">🌎 物販コンサルタント　🌞 マイコンパスワーク認定ガイド　🤖 AI活用サポーター</div>
