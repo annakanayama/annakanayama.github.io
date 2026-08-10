@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>make me Spark 単発ワーク｜まずは30分、自分と向き合う時間を</title>
+<meta name="description" content="make me Spark のワークを1つだけ、単発で体験できます。30分4,000円／1時間6,000円。「これでいいのかな」が「私はこれを選ぶ」に変わる、小さな一歩を。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*,::before,::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --pink-deep:#D4537E; --pink-mid:#ED93B1; --pink-light:#F4C0D1;
+  --pink-pale:#FBEAF0; --pink-dark:#993556; --pink-darker:#72243E;
+  --text:#1a1a1a; --text-sub:#666; --white:#fff; --radius:16px; --radius-sm:10px;
+}
+body{font-family:"Noto Sans JP",sans-serif;color:var(--text);background:var(--white);line-height:1.8;-webkit-font-smoothing:antialiased}
+.lp{max-width:680px;margin:0 auto;padding:0 20px 80px}
+.serif{font-family:"Noto Serif JP",serif}
+
+/* hero */
+.hero{text-align:center;padding:60px 20px 50px;border-bottom:1px solid var(--pink-light);position:relative;overflow:hidden}
+.hero-eyebrow{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.12em;background:var(--pink-pale);color:var(--pink-dark);padding:6px 14px;border-radius:999px}
+.hero h1{font-family:"Noto Serif JP",serif;font-size:29px;font-weight:600;line-height:1.5;margin:22px 0 6px;letter-spacing:.02em}
+.hero .sub{font-size:14px;color:var(--text-sub);margin-top:16px}
+.hero .price-badge{display:inline-block;margin-top:22px;font-size:13px;font-weight:500;color:var(--pink-dark);background:var(--pink-pale);border:1px solid var(--pink-light);border-radius:999px;padding:8px 18px}
+.g-dot{position:absolute;border-radius:50%;background:var(--pink-light);animation:twinkle var(--d,2.4s) ease-in-out infinite var(--dl,0s)}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:1;transform:scale(1.5)}}
+
+/* section */
+section{padding-top:56px}
+.sec-label{display:block;text-align:center;font-size:11px;letter-spacing:.16em;color:var(--pink-deep);font-weight:500;margin-bottom:12px}
+.sec-title{font-family:"Noto Serif JP",serif;text-align:center;font-size:22px;font-weight:600;line-height:1.6;margin-bottom:12px}
+.sec-lead{text-align:center;font-size:14px;color:var(--text-sub);margin-bottom:28px}
+
+/* こんな方へ */
+.checks{list-style:none;display:grid;gap:12px}
+.checks li{background:var(--pink-pale);border-radius:var(--radius-sm);padding:14px 16px 14px 42px;position:relative;font-size:14.5px}
+.checks li::before{content:"✦";position:absolute;left:16px;top:14px;color:var(--pink-mid)}
+
+/* とは */
+.about{background:var(--pink-pale);border-radius:var(--radius);padding:26px 22px;font-size:14.5px;color:#333}
+.about p+p{margin-top:14px}
+.about strong{color:var(--pink-dark)}
+
+/* menu */
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.menu .item{border:1px solid var(--pink-light);border-radius:var(--radius-sm);padding:18px 16px}
+.menu .item h4{font-family:"Noto Serif JP",serif;font-size:15.5px;font-weight:600;margin-bottom:6px}
+.menu .item p{font-size:12.5px;color:var(--text-sub);line-height:1.7}
+.menu-note{text-align:center;font-size:12px;color:var(--text-sub);margin-top:16px}
+
+/* benefits */
+.benefits{display:grid;gap:16px}
+.benefit{border:1px solid var(--pink-light);border-radius:var(--radius);padding:20px 20px}
+.benefit .ico{font-size:22px}
+.benefit h4{font-family:"Noto Serif JP",serif;font-size:16px;font-weight:600;margin:8px 0 4px}
+.benefit p{font-size:13.5px;color:#444}
+
+/* voices */
+.voices{display:grid;gap:14px}
+.voice{border:1px solid var(--pink-light);border-radius:var(--radius);padding:18px 20px;background:var(--white)}
+.voice p{font-size:14px;color:#333}
+.voice .who{display:block;margin-top:10px;font-size:12px;color:var(--pink-dark);text-align:right}
+.voice .tag{display:inline-block;font-size:10px;letter-spacing:.08em;background:var(--pink-pale);color:var(--pink-dark);padding:3px 9px;border-radius:999px;margin-bottom:10px}
+
+/* price */
+.price{border:1.5px solid var(--pink-light);border-radius:var(--radius);overflow:hidden}
+.price .row{display:flex;justify-content:space-between;align-items:baseline;padding:20px 22px;border-bottom:1px solid var(--pink-pale)}
+.price .row:last-child{border-bottom:none}
+.price .plan{font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600}
+.price .plan small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:12px;font-weight:400;color:var(--text-sub);margin-top:2px}
+.price .yen{font-family:"Noto Serif JP",serif;font-size:22px;font-weight:600;color:var(--pink-dark);white-space:nowrap}
+.price-note{font-size:12px;color:var(--text-sub);text-align:center;margin-top:14px}
+
+/* step / funnel */
+.step-flow{background:linear-gradient(160deg,var(--pink-pale),#fff);border:1px solid var(--pink-light);border-radius:var(--radius);padding:28px 24px;text-align:center}
+.step-flow .arrow{font-size:20px;color:var(--pink-mid);margin:6px 0}
+.step-flow .s1{font-family:"Noto Serif JP",serif;font-size:16px;font-weight:600}
+.step-flow .s1 small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:12px;font-weight:400;color:var(--text-sub);margin-top:4px}
+.step-flow .s2{font-family:"Noto Serif JP",serif;font-size:18px;font-weight:600;color:var(--pink-dark)}
+.step-flow .s2 small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:12px;font-weight:400;color:var(--text-sub);margin-top:4px}
+
+/* flow steps */
+.flow{list-style:none;counter-reset:f;display:grid;gap:14px}
+.flow li{position:relative;padding:16px 18px 16px 56px;background:var(--pink-pale);border-radius:var(--radius-sm)}
+.flow li::before{counter-increment:f;content:counter(f);position:absolute;left:16px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--pink-deep);color:#fff;font-family:"Noto Serif JP",serif;font-size:14px;display:flex;align-items:center;justify-content:center}
+.flow h4{font-size:14.5px;font-weight:500;margin-bottom:2px}
+.flow p{font-size:12.5px;color:var(--text-sub)}
+
+/* guide */
+.guide{background:var(--pink-pale);border-radius:var(--radius);padding:28px 24px;text-align:center}
+.guide .name{font-family:"Noto Serif JP",serif;font-size:20px;font-weight:600}
+.guide .role{font-size:12px;color:var(--pink-dark);letter-spacing:.05em;margin:8px 0 16px}
+.guide p{font-size:14px;text-align:left;color:#333}
+.guide p+p{margin-top:12px}
+
+/* buttons / cta */
+.btn{display:block;text-align:center;text-decoration:none;font-weight:500;letter-spacing:.04em;
+  background:linear-gradient(135deg,var(--pink-deep),var(--pink-mid));color:var(--white);
+  padding:16px 20px;border-radius:999px;font-size:16px;
+  box-shadow:0 4px 14px rgba(212,83,126,.28);transition:filter .2s,box-shadow .2s}
+.btn:hover{filter:brightness(1.06);box-shadow:0 6px 20px rgba(212,83,126,.38)}
+.btn.ghost{background:none;color:var(--pink-dark);border:1.5px solid var(--pink-light);box-shadow:none}
+.btn.ghost:hover{background:var(--pink-pale);filter:none}
+.cta{margin-top:56px;text-align:center;background:var(--pink-pale);border-radius:var(--radius);padding:34px 24px}
+.cta h2{font-family:"Noto Serif JP",serif;font-size:20px;font-weight:600;margin-bottom:10px}
+.cta p{font-size:13.5px;color:#444}
+.cta .btn{max-width:340px;margin:20px auto 0}
+.cta .small{font-size:11px;color:var(--text-sub);margin-top:14px}
+
+.backlink{display:block;text-align:center;margin-top:32px;font-size:13px;color:var(--pink-dark);text-decoration:none}
+footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:40px;letter-spacing:.06em}
+
+@media(max-width:480px){
+  .hero h1{font-size:24px}
+  .sec-title{font-size:19px}
+  .menu{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="g-dot" style="width:5px;height:5px;top:18%;left:12%;--d:2.6s"></div>
+  <div class="g-dot" style="width:4px;height:4px;top:32%;right:14%;--d:3.1s;--dl:.6s"></div>
+  <div class="g-dot" style="width:6px;height:6px;bottom:22%;left:22%;--d:2.2s;--dl:1.1s"></div>
+  <div class="g-dot" style="width:4px;height:4px;bottom:30%;right:20%;--d:2.9s;--dl:.3s"></div>
+  <span class="hero-eyebrow">✦ make me Spark 単発ワーク ✦</span>
+  <h1>まずは30分から。<br>自分と向き合う時間を。</h1>
+  <p class="sub">「これでいいのかな？」が「私はこれを選ぶ」に変わる。<br>make me Spark のワークを、1つだけ気軽に体験できます。</p>
+  <span class="price-badge">30分 ¥4,000 ／ 1時間 ¥6,000</span>
+</header>
+
+<div class="lp">
+
+  <!-- こんな方へ -->
+  <section>
+    <span class="sec-label">✦ こんな方へ</span>
+    <h2 class="sec-title">こんな気持ち、ありませんか？</h2>
+    <ul class="checks">
+      <li>いきなり長い講座はハードルが高い。まず試してみたい</li>
+      <li>頭の中がぐるぐるして、考えが整理できない</li>
+      <li>何かを選ぶたびに迷って、決められない</li>
+      <li>自分のことを、実はよくわかっていない気がする</li>
+      <li>短い時間でいいから、誰かと一緒に頭を整理したい</li>
+    </ul>
+  </section>
+
+  <!-- 単発ワークとは -->
+  <section>
+    <span class="sec-label">✦ 単発ワークとは</span>
+    <h2 class="sec-title">気になるテーマを1つ、<br>その場で一緒に</h2>
+    <div class="about">
+      <p>make me Spark のワークの中から、いま気になるテーマを<strong>1つだけ</strong>選んで、単発で受けられるプランです。</p>
+      <p>ガイドが答えを与えるのではなく、<strong>話して整理し、言葉にして気づく</strong>——そのプロセスを、安全に、一緒に進めます。ワークシートに沿って進むので、うまく話せなくても大丈夫です。</p>
+      <p>「本講座はまだ迷うけれど、一度体験してみたい」——そんな最初の一歩として使ってください。</p>
+    </div>
+  </section>
+
+  <!-- メニュー -->
+  <section>
+    <span class="sec-label">✦ 選べるワーク</span>
+    <h2 class="sec-title">その日の気分で選べる<br>ワークテーマ</h2>
+    <div class="menu">
+      <div class="item">
+        <h4>現在地発見ワーク</h4>
+        <p>今の自分を客観的に整理する。「新鮮な感覚」と好評のワーク。</p>
+      </div>
+      <div class="item">
+        <h4>ときめきワーク</h4>
+        <p>モノや環境を「ときめき」で見直し、隠れた本音に気づく。</p>
+      </div>
+      <div class="item">
+        <h4>身体の声を聴くワーク</h4>
+        <p>後回しにしがちな体調と目標を結び直す。動ける自分へ。</p>
+      </div>
+      <div class="item">
+        <h4>なりたい自分ワーク</h4>
+        <p>買ったモノや選択から、本当になりたい自分を見つける。</p>
+      </div>
+      <div class="item">
+        <h4>最善の選択ワーク</h4>
+        <p>「どっちでもいい」と思える心の余裕から、迷わず選ぶ。</p>
+      </div>
+      <div class="item">
+        <h4>お金／時間のコンパス</h4>
+        <p>お金や時間の使い方に、自分だけの判断基準をつくる。</p>
+      </div>
+    </div>
+    <p class="menu-note">※ どれにするか迷ったら、当日ご相談のうえ一緒に決められます。</p>
+  </section>
+
+  <!-- 得られること -->
+  <section>
+    <span class="sec-label">✦ 得られること</span>
+    <h2 class="sec-title">30分でも、<br>ちゃんと変わります</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <div class="ico">🧭</div>
+        <h4>頭の中が整理される</h4>
+        <p>「考えてはいるけど進まない」状態から抜け出せます。話して言葉にするだけで、モヤモヤが輪郭を持ちはじめます。</p>
+      </div>
+      <div class="benefit">
+        <div class="ico">🌸</div>
+        <h4>自分を客観的に見られる</h4>
+        <p>一人では気づけなかった自分の本音や感情に、そっと気づく体験。それが自分への信頼につながります。</p>
+      </div>
+      <div class="benefit">
+        <div class="ico">✦</div>
+        <h4>次の一歩が見える</h4>
+        <p>「まずは気づいてみて、自分がどうしたいのか」——小さな行動のきっかけを、持ち帰れます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 受けた方の声 -->
+  <section>
+    <span class="sec-label">✦ 受けた方の声</span>
+    <h2 class="sec-title">実際に受けた方から、<br>こんな声が届いています</h2>
+    <div class="voices">
+      <div class="voice">
+        <span class="tag">現在地発見ワーク</span>
+        <p>自分のことを客観的に分析できた気がします。新鮮な感覚です。</p>
+        <span class="who">— N.さん</span>
+      </div>
+      <div class="voice">
+        <span class="tag">ときめきワーク</span>
+        <p>ワークを始めて30分、改めて部屋を眺めると、ときめかないものが目に入ってくるように。感覚が麻痺してたんだなと認識できました。</p>
+        <span class="who">— P.さん</span>
+      </div>
+      <div class="voice">
+        <span class="tag">ときめきワーク</span>
+        <p>あぁ、私はこんな感情が隠れていたんだなぁと気づけました。まずは気づいてみて、自分がどうしたいのか考えてみることにします。</p>
+        <span class="who">— K.さん</span>
+      </div>
+      <div class="voice">
+        <span class="tag">最善の選択ワーク</span>
+        <p>「どっちでもいい」と思える心の余裕が、最善の結果をつれてくる——というお話が、すごくしっくり来ました。</p>
+        <span class="who">— I.さん</span>
+      </div>
+      <div class="voice">
+        <span class="tag">最善の選択ワーク</span>
+        <p>優柔不断でなかなか決められなかったのは、メリット・デメリットを理解できていなかったからだと、すごく納得できました。</p>
+        <span class="who">— B.さん</span>
+      </div>
+      <div class="voice">
+        <span class="tag">身体の声を聴くワーク</span>
+        <p>「ブレーキとアクセルを同時に踏んでいる状態」と聞いて納得でした。これからはブレーキを外してからアクセルを踏めそうです。</p>
+        <span class="who">— I.さん</span>
+      </div>
+      <div class="voice">
+        <span class="tag">なりたい自分ワーク</span>
+        <p>なりたい自分のイメージが意外でした。気づけてよかったです。気づきって大事ですね。</p>
+        <span class="who">— M.さん</span>
+      </div>
+      <div class="voice">
+        <span class="tag">セルフコーチング</span>
+        <p>この時間にセルフコーチングを受けられるとは思わず、とても嬉しかったです。とても前向きになることができました。</p>
+        <span class="who">— C.さん</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金 -->
+  <section>
+    <span class="sec-label">✦ 料金</span>
+    <h2 class="sec-title">まずは1回から</h2>
+    <div class="price">
+      <div class="row">
+        <div class="plan">お試し 30分<small>まずは雰囲気を知りたい方に</small></div>
+        <div class="yen">¥4,000</div>
+      </div>
+      <div class="row">
+        <div class="plan">じっくり 1時間<small>1つのテーマをしっかり深めたい方に</small></div>
+        <div class="yen">¥6,000</div>
+      </div>
+    </div>
+    <p class="price-note">形式：Zoom ／ 対面　｜　担当：アンナ（make me Spark 認定ガイド）</p>
+  </section>
+
+  <!-- スモールステップ（本講座への導線） -->
+  <section>
+    <span class="sec-label">✦ 次のステップ</span>
+    <h2 class="sec-title">気に入ったら、<br>本講座で深めていく</h2>
+    <div class="step-flow">
+      <div class="s1">単発ワーク<small>まずは1つ、気軽に体験</small></div>
+      <div class="arrow">▼</div>
+      <div class="s2">make me Spark ガイド（本講座）<small>全6回・約3ヶ月で、自分だけの判断基準をつくる</small></div>
+      <a class="btn ghost" href="https://annakanayama.github.io/mycompass-lp/" target="_blank" rel="noopener" style="max-width:320px;margin:22px auto 0">本講座を見てみる ✦</a>
+    </div>
+  </section>
+
+  <!-- 流れ -->
+  <section>
+    <span class="sec-label">✦ 当日の流れ</span>
+    <h2 class="sec-title">申し込みから当日まで</h2>
+    <ol class="flow">
+      <li><h4>お申し込み</h4><p>フォームからご登録ください。</p></li>
+      <li><h4>日程・テーマの調整</h4><p>ご希望の日時と、受けたいワークを決めます。</p></li>
+      <li><h4>当日ワーク（30分／1時間）</h4><p>ワークシートに沿って、対話形式で進めます。</p></li>
+      <li><h4>ふりかえり</h4><p>気づいたことを言葉にして、次の一歩を持ち帰ります。</p></li>
+    </ol>
+  </section>
+
+  <!-- ガイド紹介 -->
+  <section>
+    <span class="sec-label">✦ 担当ガイド</span>
+    <h2 class="sec-title">このワークで、私自身が<br>変わりました</h2>
+    <div class="guide">
+      <div class="name">アンナ</div>
+      <div class="role">🌎 物販コンサルタント　🌞 make me Spark 認定ガイド　🤖 AI活用サポーター</div>
+      <p>大阪在住。せどり26年のキャリアを持ちながら、AI活用やメルカリセルフコーチングの伴走など多方面で活躍中。</p>
+      <p>このワークを受けて、悶々と悩む時間が減って、行動も自信も変わりました。だから自信を持っておすすめできます。</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h2>まず一歩、<br>自分と向き合う時間を ✦</h2>
+    <p>下のフォームからお申し込みいただけます。<br>受けたいワークが決まっていなくても大丈夫です。</p>
+    <!-- ★フォーム完成後、下のhrefを単発ワーク用GoogleフォームURLに差し替えます（今は仮でFacebookへ） -->
+    <a class="btn" href="https://www.facebook.com/profile.php?id=1349326636" target="_blank" rel="noopener">お申し込み・お問い合わせ ✦</a>
+    <p class="small">※ 医療・心理カウンセリングではありません。成果を保証するものではありません。</p>
+  </div>
+
+  <a class="backlink" href="../">← アンナのトップページへ戻る</a>
+  <footer>© make me Spark 認定ガイド｜アンナ</footer>
+</div>
+
+</body>
+</html>
