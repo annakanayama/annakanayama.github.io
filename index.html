@@ -68,6 +68,17 @@ section{padding-top:56px}
 .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .meta span{font-size:11px;color:var(--text-sub);border:1px solid var(--c-light);border-radius:var(--radius-sm);padding:4px 10px}
 
+/* おすすめの入口（セミオーダーワークセッション）水色×ゴールド */
+.feature{display:block;text-decoration:none;color:inherit;margin-bottom:22px;
+  background:linear-gradient(160deg,#eef5fb,#fff);border:1.5px solid #dcc17e;border-radius:16px;
+  padding:24px 22px;box-shadow:0 6px 20px rgba(43,74,102,.10);transition:box-shadow .25s,transform .25s}
+.feature:hover{box-shadow:0 10px 28px rgba(43,74,102,.16);transform:translateY(-2px)}
+.feature-tag{display:inline-block;font-size:10px;letter-spacing:.14em;font-weight:600;color:#a67f30;background:#fff;border:1px solid #dcc17e;padding:5px 13px;border-radius:999px}
+.feature h3{font-family:"Noto Serif JP",serif;font-size:20px;font-weight:600;color:#2b4a66;margin:14px 0 4px}
+.feature .lead{font-size:13.5px;color:#3E86B5;font-weight:500;margin-bottom:10px}
+.feature p{font-size:13.5px;color:#4a5760}
+.feature-price{display:inline-block;margin-top:14px;font-family:"Noto Serif JP",serif;font-size:15px;font-weight:600;color:#a67f30}
+.feature-cta{display:block;text-align:center;margin-top:16px;background:linear-gradient(135deg,#a67f30,#c19a4b);color:#fff;padding:13px;border-radius:999px;font-size:15px;font-weight:500;box-shadow:0 4px 14px rgba(166,127,48,.28)}
 .btn{display:block;text-align:center;text-decoration:none;font-weight:500;letter-spacing:.04em;
   background:linear-gradient(135deg,var(--c-deep),var(--c-mid));color:var(--white);
   padding:15px 20px;border-radius:999px;margin-top:20px;font-size:15px;
@@ -101,7 +112,7 @@ footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:48px;le
   <div class="g-dot" style="width:4px;height:4px;bottom:30%;right:20%;--d:2.9s;--dl:.3s"></div>
   <span class="hero-eyebrow">✦ make me Spark ✦</span>
   <h1>
-    次に進むあなたに、<br>寄り添う4つの入口
+    次に進むあなたに、<br>寄り添ういくつかの入口
     <small>アンナ｜物販コンサルタント / 認定ガイド</small>
   </h1>
   <p>気になるものを選んで、詳しいご案内へお進みください。</p>
@@ -113,6 +124,16 @@ footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:48px;le
   <section id="services">
     <span class="sec-label">✦ SERVICE</span>
     <h2 class="sec-title">ご案内しているサービス</h2>
+
+    <!-- おすすめの入口：セミオーダーワークセッション -->
+    <a class="feature" href="taiken/">
+      <span class="feature-tag">✦ まずはここから ✦</span>
+      <h3>セミオーダーワークセッション</h3>
+      <p class="lead">200の内観ワークから、あなたにぴったりの1つを。</p>
+      <p>マンツーマンで30分／60分。「いきなり講座はハードルが高い」という方へ、まず気軽に試せる入口です。</p>
+      <span class="feature-price">30分 ¥4,000 ／ 60分 ¥6,000</span>
+      <span class="feature-cta">詳しく見る ✦</span>
+    </a>
 
     <div class="cards">
 
