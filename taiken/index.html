@@ -52,18 +52,12 @@ section{padding-top:64px;scroll-margin-top:76px}
 .divider svg{width:16px;height:16px}
 
 /* ---------- hero ---------- */
-.hero{position:relative;overflow:hidden;text-align:center;padding:52px 22px 46px}
-.hero .deco-leaf.tl{top:-14px;left:-26px;width:120px;transform:scaleX(-1)}
-.hero .deco-leaf.tr{top:-20px;right:-30px;width:150px}
-.hero-inner{position:relative;z-index:1;max-width:600px;margin:0 auto}
-.hero-kicker{font-size:13px;color:var(--text-sub);margin-bottom:16px;letter-spacing:.02em}
-.hero h1{font-family:"Noto Serif JP",serif;font-size:31px;line-height:1.62;font-weight:600;color:var(--navy);letter-spacing:.02em}
-.hero h1 .em{color:var(--gold-deep);position:relative}
-.hero h1 .em::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:7px;background:rgba(220,193,126,.35);z-index:-1;border-radius:3px}
-.hero-name{display:inline-block;font-family:"Noto Serif JP",serif;font-size:16px;font-weight:600;color:var(--navy);
-  letter-spacing:.06em;margin:22px 0 0;padding:7px 20px;border:1px solid var(--gold-soft);border-radius:999px;background:var(--white)}
-.hero-desc{font-size:14px;line-height:1.95;color:#4a5760;margin:18px auto 0;max-width:500px}
-.hero-price{margin-top:22px;font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600;color:var(--navy)}
+.hero{position:relative;overflow:hidden;text-align:center;padding:0 0 46px}
+.hero-img{display:block;width:100%;max-width:640px;margin:0 auto}
+.hero-inner{position:relative;z-index:1;max-width:600px;margin:0 auto;padding:26px 22px 0}
+.hero-name{display:inline-block;font-family:"Noto Serif JP",serif;font-size:17px;font-weight:600;color:var(--navy);
+  letter-spacing:.06em;margin:0;padding:8px 22px;border:1px solid var(--gold-soft);border-radius:999px;background:var(--white)}
+.hero-price{margin-top:18px;font-family:"Noto Serif JP",serif;font-size:19px;font-weight:600;color:var(--navy)}
 .hero-price .yen{color:var(--gold-deep)}
 .hero-price small{font-family:"Noto Sans JP",sans-serif;font-size:12px;font-weight:400;color:var(--text-sub)}
 .hero-cta{display:inline-block;margin-top:24px;font-size:16.5px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.04em;
@@ -201,8 +195,9 @@ footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:40px;le
 }
 
 @media(max-width:480px){
-  .hero{padding:40px 16px 40px}
-  .hero h1{font-size:22px}
+  .hero{padding:0 0 38px}
+  .hero-inner{padding:22px 16px 0}
+  .hero-name{font-size:15.5px;padding:7px 16px}
   .sec-title{font-size:20px}
   .menu{grid-template-columns:1fr}
   .trust .t p{font-size:11px}
@@ -227,36 +222,15 @@ footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:40px;le
   </div>
 </header>
 
-<!-- ========== ヒーロー ========== -->
+<!-- ========== ヒーロー（参考イラストを一番上に） ========== -->
 <header class="hero">
-  <!-- 水彩の葉（装飾） -->
-  <svg class="deco-leaf tl" viewBox="0 0 140 180" aria-hidden="true"><path d="M70 175 C66 130 55 95 78 30" stroke="#9db98f" stroke-width="1.8" fill="none" opacity=".6"/><g fill="#9db98f" opacity=".5"><ellipse cx="55" cy="120" rx="15" ry="7" transform="rotate(-28 55 120)"/><ellipse cx="88" cy="105" rx="15" ry="7" transform="rotate(28 88 105)"/><ellipse cx="58" cy="90" rx="14" ry="6.5" transform="rotate(-25 58 90)"/><ellipse cx="86" cy="75" rx="14" ry="6.5" transform="rotate(25 86 75)"/><ellipse cx="63" cy="60" rx="12" ry="6" transform="rotate(-22 63 60)"/><ellipse cx="82" cy="48" rx="12" ry="6" transform="rotate(22 82 48)"/><ellipse cx="72" cy="34" rx="9" ry="5"/></g></svg>
-  <svg class="deco-leaf tr" viewBox="0 0 140 180" aria-hidden="true"><path d="M70 175 C66 130 55 95 78 30" stroke="#8fb6d4" stroke-width="1.8" fill="none" opacity=".55"/><g fill="#a9c8b0" opacity=".5"><ellipse cx="55" cy="120" rx="16" ry="7.5" transform="rotate(-28 55 120)"/><ellipse cx="88" cy="105" rx="16" ry="7.5" transform="rotate(28 88 105)"/><ellipse cx="58" cy="90" rx="15" ry="7" transform="rotate(-25 58 90)"/><ellipse cx="86" cy="75" rx="15" ry="7" transform="rotate(25 86 75)"/><ellipse cx="63" cy="60" rx="13" ry="6.5" transform="rotate(-22 63 60)"/><ellipse cx="82" cy="48" rx="13" ry="6.5" transform="rotate(22 82 48)"/><ellipse cx="72" cy="34" rx="10" ry="5.5"/></g></svg>
-
+  <img class="hero-img" src="hero.png"
+       alt="200種類ある内観ワークの中から、あなたにピッタリなワークをガイドが選んで、一緒に伴走します。決まったカリキュラムではなく、その日のあなたの状態に合わせた半オーダーメイドのワークです。マンツーマンで30分または60分、あなたに寄り添いながら、あなたの中から、あなた自身の正解を引き出していきます。">
   <div class="hero-inner">
-    <p class="hero-kicker">なんとなくモヤモヤする。でも、何に悩んでいるのかわからない。</p>
-    <h1>今のあなたに必要なワークを、<br><span class="em">一緒に選びます。</span></h1>
-    <div class="hero-name">✦ セミオーダーワークセッション ✦</div>
-    <p class="hero-desc">200種類以上の内観ワークの中から、今のあなたにぴったりの1つを選ぶ、半オーダーメイドの内観セッションです。</p>
-    <p class="hero-price">マンツーマン｜30分 <span class="yen">¥4,000</span> ／ 60分 <span class="yen">¥6,000</span></p>
+    <h1 class="hero-name">✦ セミオーダーワークセッション ✦</h1>
+    <p class="hero-price"><span class="yen">30分 ¥4,000</span> ／ <span class="yen">60分 ¥6,000</span></p>
     <a class="hero-cta" href="https://www.facebook.com/profile.php?id=1349326636" target="_blank" rel="noopener">今すぐ申し込む</a>
     <p class="hero-cta-sub">まずは30分、自分のための時間をつくってみませんか？</p>
-
-    <!-- 3つの安心（参考画像の下部アイコン） -->
-    <div class="trust">
-      <div class="t">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-9.8A3.7 3.7 0 0 1 12 7a3.7 3.7 0 0 1 7 4.2C19 16.5 12 21 12 21z"/></svg>
-        <p>安心・安全な<br>プライベート空間</p>
-      </div>
-      <div class="t">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="12" height="18" rx="2"/><path d="M9 3v18M12 8h3M12 12h3"/></svg>
-        <p>その日の状態に<br>合わせたオーダーメイド</p>
-      </div>
-      <div class="t">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13c0-3.3 2.2-5.5 5.5-5.5C17.5 10.8 15.3 13 12 13z"/><path d="M12 13c0-2.8-2.2-4.8-5.5-4.8C6.5 11 8.7 13 12 13z"/></svg>
-        <p>気づきと行動に<br>つながるサポート</p>
-      </div>
-    </div>
   </div>
 </header>
 
