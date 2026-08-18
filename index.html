@@ -67,6 +67,14 @@ section{padding-top:68px}
 .service-main.pink h3{color:#A0506A}
 .service-main.pink .lead{color:#C96E8B}
 .service-main.pink .price{color:#B36683}
+.service-main.mint{background:linear-gradient(145deg,#EFF8F1,#fff 72%);border-color:#CFE7D5}
+.service-main.mint .visual{background:linear-gradient(160deg,#A9D3B4,#6FA982)}
+.service-main.mint h3{color:#3E7A57}
+.service-main.mint .lead{color:#5E9E77}
+.service-main.mint .price{color:#4E8A63}
+.service-more-label{text-align:center;font-size:12px;font-weight:700;color:var(--sub);letter-spacing:.05em;margin:22px 0 12px}
+.service-main.long{grid-template-columns:120px 1fr;box-shadow:0 6px 18px rgba(50,95,120,.06)}
+.service-main.long h3{font-size:18px}
 
 /* ---------- その他サービス ---------- */
 .other-title{font-family:"Noto Serif JP",serif;text-align:center;font-size:16px;color:#4a5a63;margin:42px 0 18px;font-weight:600}
@@ -140,14 +148,26 @@ footer{text-align:center;font-size:10px;color:#899198;margin-top:50px;letter-spa
     <p class="sec-lead">「ちょっと整理したい」から「これからの自分の軸をつくりたい」まで。<br>今のあなたに合う入口を選んでください。</p>
 
     <div class="service-stack">
+      <a class="service-main mint" href="taiken/">
+        <div class="visual"><div class="visual-mark">初回<br><span>TRIAL</span></div></div>
+        <div class="service-body">
+          <div class="mini" style="color:#4E8A63">はじめての方へ ｜ 先着5名さま限定</div>
+          <h3>初回限定トライアル</h3>
+          <p class="lead">まずはお試しで、内観ワークを体験。</p>
+          <p>200種類以上の内観ワークから、その日のあなたに合う1つを。初回のかたは、この特別価格でどうぞ。</p>
+          <div class="price">30分¥5,000 ／ 60分¥8,000 <small>税込・初回限定価格</small></div>
+          <div class="arrow">詳しく見る　→</div>
+        </div>
+      </a>
+
       <a class="service-main" href="taiken/">
         <div class="visual"><div class="visual-mark">単発<br><span>SINGLE</span></div></div>
         <div class="service-body">
-          <div class="mini">STEP 1 ｜ まずは1回から</div>
+          <div class="mini">2回目以降 ｜ 単発セッション</div>
           <h3>内観ワーク（単発）</h3>
           <p class="lead">今のあなたに必要なワークを、一緒に選びます。</p>
-          <p>200種類以上の内観ワークから、その日のあなたにぴったりの1つを。まず自分の中を整理したい方へ。＜セミオーダーワークセッション＞</p>
-          <div class="price">初回限定¥5,000（先着5名）／ 単発 30分¥6,000・60分¥9,800 <small>税込</small></div>
+          <p>その日の気分・お悩みに合わせて、1回から受けられます。＜セミオーダーワークセッション＞</p>
+          <div class="price">30分¥6,000 ／ 60分¥9,800 <small>税込</small></div>
           <div class="arrow">詳しく見る　→</div>
         </div>
       </a>
@@ -155,7 +175,7 @@ footer{text-align:center;font-size:10px;color:#899198;margin-top:50px;letter-spa
       <a class="service-main" href="taiken/#price">
         <div class="visual" style="background:linear-gradient(160deg,#D9C28A,#A98032)"><div class="visual-mark">3回<br><span>PACK</span></div></div>
         <div class="service-body">
-          <div class="mini" style="color:#A98032">STEP 2 ｜ 3回パック</div>
+          <div class="mini" style="color:#A98032">じっくり ｜ 3回パック</div>
           <h3>内観ワーク 3回パック</h3>
           <p class="lead" style="color:#A98032">続けて受けて、じっくり深めたい方に。</p>
           <p>セミオーダーワークを全3回（30分／60分から選べます）。単発よりお得に、変化を積み重ねられます。</p>
@@ -163,19 +183,20 @@ footer{text-align:center;font-size:10px;color:#899198;margin-top:50px;letter-spa
           <div class="arrow">詳しく見る　→</div>
         </div>
       </a>
-
-      <a class="service-main pink" href="https://annakanayama.github.io/mycompass-lp/">
-        <div class="visual"><div class="visual-mark">長期<br><span>COURSE</span></div></div>
-        <div class="service-body">
-          <div class="mini">STEP 3 ｜ 人生の軸をつくる長期講座</div>
-          <h3>長期講座（マイコンパスワーク）</h3>
-          <p class="lead">「これでいいのかな？」が「私はこれを選ぶ！」に変わる。</p>
-          <p>自分だけの判断基準をつくり、迷いながらも自分で選んで進める私になるための本講座。3ヶ月または6ヶ月、じっくり伴走します。最初から6ヶ月コースが追加ワークつきでお得です。</p>
-          <div class="price">全6回・約3ヶ月 ／ 全15回・約6ヶ月</div>
-          <div class="arrow">詳しく見る　→</div>
-        </div>
-      </a>
     </div>
+
+    <div class="service-more-label">＋ さらにその先へ（長期講座）</div>
+    <a class="service-main pink long" href="https://annakanayama.github.io/mycompass-lp/">
+      <div class="visual"><div class="visual-mark">長期<br><span>COURSE</span></div></div>
+      <div class="service-body">
+        <div class="mini">人生の軸をつくる ｜ 3〜6ヶ月</div>
+        <h3>長期講座（マイコンパスワーク）</h3>
+        <p class="lead">「これでいいのかな？」が「私はこれを選ぶ！」に変わる。</p>
+        <p>自分だけの判断基準をつくり、迷いながらも自分で選んで進める私になるための長期講座。3ヶ月または6ヶ月、じっくり伴走します。</p>
+        <div class="price">全6回・約3ヶ月 ／ 全15回・約6ヶ月</div>
+        <div class="arrow">詳しく見る　→</div>
+      </div>
+    </a>
 
     <h3 class="other-title">その他のサポート</h3>
     <div class="other-services">
