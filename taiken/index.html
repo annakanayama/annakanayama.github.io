@@ -114,6 +114,12 @@ section{padding-top:62px;scroll-margin-top:72px}
 .plan .pprice small{font-size:12px;font-weight:600;color:var(--text-sub)}
 .plan .pdesc{font-size:12.5px;color:#52616a;margin-top:8px}
 .plan .badge{display:inline-block;font-size:10px;font-weight:700;color:var(--gold-deep);background:var(--cream);border:1px solid var(--gold-soft);border-radius:999px;padding:2px 9px;margin-left:6px;vertical-align:middle}
+.plan-long{margin-top:18px;background:var(--blue-pale);border:1px dashed var(--blue-soft);border-radius:var(--radius);padding:18px 20px}
+.plan-long .pstep{color:var(--blue)}
+.plan-long .pname{font-family:"Noto Serif JP",serif;font-size:15.5px;font-weight:600;color:var(--navy)}
+.plan-long .pprice{font-family:"Noto Serif JP",serif;font-size:18px;font-weight:700;color:var(--gold-deep);white-space:nowrap}
+.plan-long .pprice small{font-size:12px;font-weight:600;color:var(--text-sub)}
+.plan-long .pdesc{font-size:12.5px;color:#52616a;margin-top:8px}
 .price-note{font-size:12px;color:var(--text-sub);text-align:center;margin-top:16px;line-height:1.8}
 
 /* 声 */
@@ -303,32 +309,36 @@ footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:38px;le
     </div>
   </section>
 
-  <!-- 料金 松竹梅 -->
+  <!-- 料金 -->
   <section id="price">
     <span class="sec-label">PRICE</span>
-    <h2 class="sec-title">あなたのペースで選べる<br>4つのプラン</h2>
-
-    <div class="trialbox">
-      <div class="t">🌱 まずはお試し（先着5名さま限定）</div>
-      <div class="p">¥5,000<small> 税込</small></div>
-      <div class="n">トライアル 30分マンツーマン</div>
-    </div>
+    <h2 class="sec-title">あなたのペースで選べる<br>料金プラン</h2>
 
     <div class="plans">
       <div class="plan">
-        <div class="pstep">STEP 1 ｜ 1回（単発）から</div><div class="plan-head"><div><span class="pname">単発セッション</span></div><div class="pprice">¥6,000〜</div></div>
-        <p class="pdesc">30分 ¥6,000 ／ 60分 ¥9,800（税込）。まずは1回、気軽に受けたい方に。<span class="badge">グループ受講も可</span></p>
+        <div class="pstep">① はじめての方へ（先着5名さま限定）</div>
+        <div class="plan-head"><div><span class="pname">初回限定トライアル</span></div><div class="pprice">¥5,000</div></div>
+        <p class="pdesc">30分マンツーマン（税込）。まずはお試しで、内観ワークを体験してみたい方に。</p>
       </div>
       <div class="plan pick">
-        <div class="pstep">STEP 2 ｜ 3回パック</div><div class="plan-head"><div><span class="pname">3回パック</span></div><div class="pprice">¥14,800〜</div></div>
-        <p class="pdesc">30分×3回 ¥14,800 ／ 60分×3回 ¥24,800（税込）。続けて受けて、じっくり深めたい方に。単発よりお得です。<span class="badge">グループ受講も可</span></p>
+        <div class="pstep">② 単発で受けたい方へ</div>
+        <div class="plan-head"><div><span class="pname">内観ワーク（単発）</span></div><div class="pprice">¥6,000〜</div></div>
+        <p class="pdesc">30分 ¥6,000 ／ 60分 ¥9,800（税込）。その日の気分・お悩みに合わせて1回から。<span class="badge">グループ受講も可</span></p>
       </div>
       <div class="plan">
-        <div class="pstep">STEP 3 ｜ 人生の軸をつくる長期講座</div><div class="plan-head"><div><span class="pname">マイコンパスワーク（本講座）</span></div><div class="pprice">¥39,800<small>／全6回〜</small></div></div>
-        <p class="pdesc">60分 × 全6回。3ヶ月または6ヶ月、じっくり伴走し、自分だけの判断基準をつくる本講座です。</p>
+        <div class="pstep">③ じっくり続けたい方へ</div>
+        <div class="plan-head"><div><span class="pname">3回パック</span></div><div class="pprice">¥14,800〜</div></div>
+        <p class="pdesc">30分×3回 ¥14,800 ／ 60分×3回 ¥24,800（税込）。続けて受けて深めたい方に。単発よりお得です。<span class="badge">グループ受講も可</span></p>
       </div>
     </div>
-    <p class="price-note">形式：Zoom ／ 対面　｜　担当：アンナ（マイコンパスワーク認定ガイド）<br>※ 梅・竹はグループでの受講も可能です（料金は応相談）。</p>
+
+    <div class="plan-long">
+      <div class="pstep">＋ もっと深めたい方へ（長期講座）</div>
+      <div class="plan-head"><div><span class="pname">マイコンパスワーク（本講座）</span></div><div class="pprice">¥39,800<small>／全6回〜</small></div></div>
+      <p class="pdesc">60分 × 全6回（約3ヶ月）〜。じっくり伴走し、自分だけの「判断基準」をつくる長期講座です。詳しくは下の「NEXT STEP」をご覧ください。</p>
+    </div>
+
+    <p class="price-note">形式：Zoom ／ 対面　｜　担当：アンナ（マイコンパスワーク認定ガイド）<br>※ 単発・3回パックはグループでの受講も可能です（料金は応相談）。</p>
   </section>
 
   <!-- お客様の声 -->
