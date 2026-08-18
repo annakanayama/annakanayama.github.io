@@ -107,6 +107,10 @@ section{padding-top:62px;scroll-margin-top:72px}
 .plan{background:var(--white);border:1px solid var(--blue-light);border-radius:var(--radius);padding:20px 22px;box-shadow:0 3px 12px rgba(43,74,102,.06)}
 .pstep{display:block;font-size:10.5px;letter-spacing:.08em;font-weight:700;color:var(--gold-deep);margin-bottom:9px}
 .plan.pick{border:1.5px solid var(--gold-soft);background:linear-gradient(150deg,#fffdf6,#fff)}
+.plan.trial{border:2px solid var(--gold-soft);background:linear-gradient(150deg,#fffdf6,#fff);box-shadow:0 8px 22px rgba(166,127,48,.16);position:relative;padding:24px 22px}
+.plan.trial .ribbon{position:absolute;top:-11px;right:16px;font-size:10px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--gold-deep),var(--gold));padding:4px 13px;border-radius:999px;letter-spacing:.06em;box-shadow:0 3px 8px rgba(166,127,48,.3)}
+.plan.trial .pname{font-size:18.5px}
+.plan.trial .pprice{font-size:23px}
 .plan-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .plan .rank{font-family:"Noto Serif JP",serif;font-size:13px;font-weight:700;color:var(--gold-deep)}
 .plan .pname{font-family:"Noto Serif JP",serif;font-size:16.5px;font-weight:600;color:var(--navy)}
@@ -214,7 +218,7 @@ footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:38px;le
   <img class="hero-img" src="hero.png" alt="200種類ある内観ワークの中から、あなたにピッタリなワークをガイドが選んで、一緒に伴走します。マンツーマンで30分または60分、あなた自身の正解を見つけるサポート。">
   <div class="hero-inner">
     <div class="hero-name">✦ セミオーダーワークセッション ✦</div>
-    <p class="hero-trial">🌱 初回トライアル <b>30分 ¥5,000（税込）</b><br>先着5名さま限定</p>
+    <p class="hero-trial">🌱 初回トライアル <b>30分 ¥5,000 ／ 60分 ¥8,000（税込）</b><br>先着5名さま限定・グループ受講も可</p>
     <a class="hero-cta" href="https://docs.google.com/forms/d/1dMvPBOPBm_Hi8zE6y_ijYNaBF6X1nxOl84xRN9S77Wo/viewform" target="_blank" rel="noopener">今すぐ申し込む</a>
     <p class="hero-cta-sub">まずは30分、自分のための時間をつくってみませんか？</p>
   </div>
@@ -315,10 +319,11 @@ footer{text-align:center;font-size:11px;color:var(--text-sub);margin-top:38px;le
     <h2 class="sec-title">あなたのペースで選べる<br>料金プラン</h2>
 
     <div class="plans">
-      <div class="plan">
-        <div class="pstep">① はじめての方へ（先着5名さま限定）</div>
+      <div class="plan trial">
+        <span class="ribbon">先着5名さま限定</span>
+        <div class="pstep">① はじめての方へ</div>
         <div class="plan-head"><div><span class="pname">初回限定トライアル</span></div><div class="pprice">¥5,000<small>〜</small></div></div>
-        <p class="pdesc">30分 ¥5,000 ／ 60分 ¥8,000（税込・初回限定価格）。まずはお試しで、内観ワークを体験してみたい方に。</p>
+        <p class="pdesc">30分 ¥5,000 ／ 60分 ¥8,000（税込・初回限定価格）。まずはお試しで、内観ワークを体験してみたい方に。<span class="badge">グループ受講も可</span></p>
       </div>
       <div class="plan pick">
         <div class="pstep">② 単発で受けたい方へ</div>
